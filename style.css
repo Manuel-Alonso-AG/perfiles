@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0d1117;
+	color: #c9d1d9;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+	padding: 40px 20px;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+	gap: 40px;
+}
+
+.profile-card {
+	display: flex;
+	gap: 20px;
+	background-color: #0d1117;
+}
+
+.left-section {
+	width: 320px;
+	flex-shrink: 0;
+}
+
+.profile-image {
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	border: 1px solid #30363d;
+	object-fit: cover;
+	background-color: #21262d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 120px;
+	color: #8b949e;
+}
+
+.profile-name {
+	font-size: 26px;
+	font-weight: 600;
+	margin-top: 20px;
+	color: #c9d1d9;
+}
+
+.profile-username {
+	font-size: 20px;
+	color: #8b949e;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+
+.profile-pronouns {
+	font-size: 14px;
+	color: #8b949e;
+	margin-bottom: 20px;
+}
+
+.profile-bio {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	color: #c9d1d9;
+}
+
+.location {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: #8b949e;
+	font-size: 14px;
+}
+
+.right-section {
+	flex: 1;
+	background-color: #161b22;
+	border: 1px solid #30363d;
+	border-radius: 6px;
+	padding: 30px;
+}
+
+.profile-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #30363d;
+}
+
+.profile-title {
+	font-size: 14px;
+	color: #8b949e;
+}
+
+.greeting {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.greeting-text {
+	font-weight: 600;
+	color: #c9d1d9;
+}
+
+.description {
+	font-size: 15px;
+	line-height: 1.8;
+	margin-bottom: 30px;
+	color: #c9d1d9;
+}
+
+.skills-section {
+	margin-top: 30px;
+}
+
+.skills-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #c9d1d9;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 15px;
+}
+
+.skill-category {
+	background-color: #0d1117;
+	border: 1px solid #30363d;
+	border-radius: 6px;
+	padding: 15px;
+}
+
+.skill-category h3 {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 12px;
+	color: #c9d1d9;
+}
+
+.skill-badges {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.badge {
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+    color: white;
+}
+
+.badge-flutter {background-color: #02569B;}
+.badge-html {background-color: #E34F26;}
+.badge-css {background-color: #1572B6;}
+.badge-node {background-color: #339933;}
+.badge-mysql {background-color: #4479A1;}
+.badge-mongodb {background-color: #47A248;}
+.badge-php {background-color: #777BB4;}
+.badge-java {background-color: #E76F00;}
+.badge-figma {background-color: #F24E1E;}
+.badge-office {background-color: #D83B01;}
+.badge-vscode {background-color: #007ACC;}
+.badge-netbeans {background-color: #1B6AC6;}
+.badge-uml {background-color: #6C757D;}
+.badge-c {background-color: #8f5ada;}
+
+hr {
+	border: none;
+	border-top: 1px solid #30363d;
+	margin: 30px 0;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.profile-card {
+		flex-direction: column;
+	}
+
+	.left-section {
+		width: 100%;
+	}
+
+	.profile-image {
+		width: 100%;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+}
+
